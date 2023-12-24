@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {Link,useNavigate} from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { signInStart, signInSuccess, signInFailure } from '../redux/user/userSlice';
+import OAuth from '../components/OAuth';
 
 
 export const SignIn = () => {
@@ -68,7 +69,14 @@ export const SignIn = () => {
         >
           {loading ? 'Loading...' : 'Sign Up'}
         </button>
+        <OAuth/>
     </form>
+    <div className='flex gap-4'>
+      <p> Dont have an accoun?</p>
+      <Link to={'/sign-up'}>
+         <span className='text-blue-600'>Sign up</span>
+      </Link>
+    </div>
     {error && <p className=' text-red-500 mt-5'>{error} </p>}
 
   </div>);
