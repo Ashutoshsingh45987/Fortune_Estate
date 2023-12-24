@@ -22,7 +22,7 @@ App.use("/api/user",userRouter);
 App.use('/api/auth',authRouter);
 
 App.use((err,req,res ,next)=>{
-    const statusCode= err.statusCode||500;
+    const statusCode= err.statusCode||500;                       //This is a middleware for error handling ..we will use 'next' to use in further
     const message= err.message||"internal server error";
     return(res.status(statusCode).json(
         {
