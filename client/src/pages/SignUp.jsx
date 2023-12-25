@@ -78,7 +78,7 @@ export const SignUp = () => {
     <div className='flex gap-2 mt-5'>
       <p>Have an account?</p>
       <Link to={"/sign-in"}>
-        <span className='text-blue-600'>Sign in</span> 
+        <span className='text-blue-600'>Sign up</span> 
       </Link>
     </div>
   </div>);
