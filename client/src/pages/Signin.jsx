@@ -67,7 +67,7 @@ export const SignIn = () => {
           disabled={loading}
           className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'
         >
-          {loading ? 'Loading...' : 'Sign Up'}
+          {loading ? 'Loading...' : 'Sign in'}
         </button>
         <OAuth/>
     </form>
