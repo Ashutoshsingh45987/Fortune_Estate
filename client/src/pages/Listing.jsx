@@ -53,7 +53,7 @@ export const Listing = () => {
     fetchListing();
   }, [params.listingId]);
 
-  console.log(currentUser._id,listing.userRef); 
+ 
 
   return (
     <main>
