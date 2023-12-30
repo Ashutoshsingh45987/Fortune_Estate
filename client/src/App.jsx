@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home } from './pages/Home'
-import { Profile } from './pages/Profile'
-import  SignIn  from './pages/SignIn.jsx'
-import { SignUp } from './pages/SignUp'
-import { About } from './pages/About'
-import { Header } from './Header'
-import PrivateRoute from './components/PrivateRoute.jsx'
-import { CreateListing } from './pages/CreateListing.jsx'
-import { UpdateListing } from './pages/UpdateListing.jsx'
-import { Listing } from './pages/Listing.jsx'
-import Search from './pages/Search.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Profile } from './pages/Profile';
+import  SignIn  from './pages/SignIn';
+import { SignUp } from './pages/SignUp';
+import { About } from './pages/About';
+import { Header } from './Header';
+import PrivateRoute from './components/PrivateRoute.jsx';
+import { CreateListing } from './pages/CreateListing.jsx';
+import { UpdateListing } from './pages/UpdateListing.jsx';
+import { Listing } from './pages/Listing.jsx';
+import Search from './pages/Search.jsx';
 
 export default function App() {
   return (
@@ -30,5 +30,5 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
