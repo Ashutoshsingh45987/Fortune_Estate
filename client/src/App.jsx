@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home.jsx';
 import { Profile } from './pages/Profile.jsx';
-import  SignIn  from './pages/SignIn.jsx';
 import { SignUp } from './pages/SignUp.jsx';
 import { About } from './pages/About.jsx';
 import { Header } from './Header.jsx';
@@ -10,6 +9,7 @@ import { CreateListing } from './pages/CreateListing.jsx';
 import { UpdateListing } from './pages/UpdateListing.jsx';
 import { Listing } from './pages/Listing.jsx';
 import Search from './pages/Search.jsx';
+import SignIn from './pages/Signin.jsx';
 
 export default function App() {
   return (
