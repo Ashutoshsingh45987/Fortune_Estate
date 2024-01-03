@@ -6,7 +6,7 @@ import {
   uploadBytesResumable,
 } from 'firebase/storage';
 import { app } from '../firebase';
-import { set } from 'mongoose';
+
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
