@@ -65,7 +65,7 @@ export const Home = () => {
           to={'/search'}
           className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
         >
-          Let's get started...
+          Lets get started...
         </Link>
       </div>
 

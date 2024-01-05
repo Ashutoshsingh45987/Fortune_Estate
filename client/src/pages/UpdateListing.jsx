@@ -54,6 +54,7 @@ export const UpdateListing = () => {
 
 
   const handleImageSubmit = (e) => {
+    e.preventDefault();
     if (files.length > 0 && files.length + formData.imageUrls.length < 7) {
       setUploading(true);
       setImageUploadError(false);
@@ -72,6 +73,7 @@ export const UpdateListing = () => {
           setUploading(false);
         })
         .catch((err) => {
+          
           setImageUploadError('Image upload failed (2 mb max per image)');
           setUploading(false);
         });

@@ -7,10 +7,24 @@ import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 dotenv.config();
 
-// connetcting to the database
-mongoose.connect(process.env.MONGO).then(()=>{
-    console.log("connected to mongodb");
-}).catch((err)=>{console.log("error");});
+ //connetcting to the database
+
+ const connectDb = async() =>{
+ try {
+     await mongoose.connect(process.env.MONGO).then(()=>{
+     console.log("connected to mongodb");
+
+ }) 
+ }catch (error) {
+     console.log(error);
+ }
+ }
+
+ connectDb()
+
+//   mongoose.connect(process.env.MONGO).then(()=>{
+//       console.log("connected to mongodb");
+//   }).catch((error)=>{console.log(error);});
 
 const App = express();
 
