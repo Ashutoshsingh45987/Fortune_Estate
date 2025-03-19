@@ -21,6 +21,8 @@ export default function Search() {
   
     useEffect(() => {
       const urlParams = new URLSearchParams(location.search);
+      console.log(location.search);
+      console.log(window.location.search);
       const searchTermFromUrl = urlParams.get('searchTerm');
       const typeFromUrl = urlParams.get('type');
       const parkingFromUrl = urlParams.get('parking');
